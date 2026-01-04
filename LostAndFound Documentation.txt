@@ -1,0 +1,124 @@
+📌 Project Overview
+The Lost & Found Website is a multi-page static web application designed to help students report lost items and list found belongings within a college campus.
+The project focuses on clean UI design, smooth navigation, and user-friendly interaction using HTML, CSS, and basic JavaScript.
+This website is built as a Web Programming academic project and demonstrates real-life problem solving through a digital platform.
+==============================================================================================================================
+🛠 Technologies Used
+Technology	Purpose
+HTML5	                     Page structure
+CSS3	                     Styling, layout, hover effects
+JavaScript               	Alerts & form feedback
+Browser	                     Client-side rendering
+==============================================================================================================================
+<<<<<Website Pages Overview>>>>>
+==>Home Page (lostinghome.html)
+Acts as the main landing page
+Displays a hero section with:
+Website purpose
+Call-to-action buttons
+Navigation links to:
+About Us
+Lost Items
+Found Items
+Contact
+Buttons to:
+            Report Lost Item
+            Report Found Item
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+==>About Us Page (index.html)
+Explains:
+Purpose of the Lost & Found portal
+Motivation behind building the website
+Includes two content sections:
+About the platform
+About the student team
+Designed with vertical content boxes for clarity
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+==>Lost Items Page (lostitems.html)
+Displays items reported as lost by students
+Uses a 2-column grid layout
+Each card shows:
+Item name
+Location
+Date
+Description
+Reporter name
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+==>Found Items Page (found.html)
+Lists items that have been found or recovered
+Card-based layout similar to Lost Items page
+Shows:
+Lost location
+Found location
+Recovery status (Recovered / Unrecovered)
+Status is visually highlighted using colors
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+==>Report Lost Item Page (reportlost.html)
+Form for reporting lost belongings
+Collects:
+Student name
+Class & division
+Item details
+Category
+Last seen location
+Date lost
+On submission:
+Displays a confirmation alert
+No backend (static form simulation)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+==>Report Found Item Page (reportfound.html)
+Similar to Report Lost page
+Used to report items that someone has found
+Collects:
+Finder’s details
+Item information
+Found location
+Date found
+Displays success alert on submission
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+==>Contact Page (contact.html)
+Displays:
+Email
+Phone number
+Location
+Includes a contact form for messages
+On submit:
+Shows a confirmation alert
+Styled for clean and professional appearance
+==============================================================================================================================
+Navigation System
+Common navigation bar across all pages
+Smooth hover effects:
+Text color change
+Slight scale animation
+Ensures consistent user experience
+==============================================================================================================================
+UI & Design Highlights
+Gradient navigation bar
+Card-based layout
+Consistent color palette
+Hover animations
+Responsive-friendly structure
+Clear typography and spacing
+==============================================================================================================================
+Limitations
+No backend or database integration
+Forms do not store data
+Static content only
+No authentication system
+==============================================================================================================================
+Future Enhancements
+Backend integration (PHP / Node / Python)
+Database support for storing reports
+User login system
+Search and filter functionality
+Admin dashboard
+Email notifications
+==============================================================================================================================
+Conclusion
+The Lost & Found Website demonstrates:
+Multi-page website structure
+Clean HTML & CSS design
+Practical real-world problem solving
+Strong UI consistency
+Beginner-friendly web development concepts
