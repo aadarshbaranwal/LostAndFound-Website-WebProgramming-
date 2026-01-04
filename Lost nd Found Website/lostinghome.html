@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lost & Found | Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+;
+            background-color: aliceblue;
+            color: dimgrey;
+        }
+        nav {
+            background-color: darkslategrey;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color:  lightsteelblue;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+nav ul li a {
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav ul:hover li a {
+  color: lightgray;
+}
+
+nav ul li a:hover {
+  transform: scale(1.15);
+  color: deepskyblue;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(to right, royalblue, midnightblue);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 14px 28px;
+            margin: 10px;
+            border-radius: 30px;
+            font-size: 16px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .lost-btn {
+            background-color: white;
+            color: #2563eb;
+        }
+
+        .lost-btn:hover {
+            background-color: #e0f2fe;
+            transform: translateY(-3px);
+        }
+
+        .found-btn {
+            background-color: #1f2933;
+            color: white;
+        }
+
+        .found-btn:hover {
+            background-color: #111827;
+            transform: translateY(-3px);
+        }
+
+        .info {
+            padding: 60px 80px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            flex: 1;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #1f2933;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 18px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <nav>
+        <h2>Lost & Found</h2>
+        <ul>
+            <li><a href="index.html">AboutUs</a></li>
+            <li><a href="lostitems.html">Lost</a></li>
+            <li><a href="found.html">Found</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero">
+        <h1>Lost Something? Found Something?</h1>
+        <p>
+            A simple and reliable platform to help people report lost items
+            and reconnect found items with their rightful owners.
+        </p>
+
+        <div class="buttons">
+            <a href="reportlost.html" class="lost-btn">Report Lost Item</a>
+            <a href="reportfound.html" class="found-btn">Report Found Item</a>
+        </div>
+    </section>
+
+ 
+    <section class="info">
+        <div class="card">
+            <h3>Report Lost Items</h3>
+            <p>
+                Easily submit details of your lost belongings so others can help
+                you find them faster.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Report Found Items</h3>
+            <p>
+                Found something that doesn’t belong to you? Report it here
+                and help return it to the owner.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Safe & Simple</h3>
+            <p>
+                Our platform is designed to be simple, secure, and easy to use
+                for everyone.
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        © 2026 Lost & Found Website | Web Programming Project | Aadarsh Baranwal 
+    </footer>
+
+</body>
+</html>

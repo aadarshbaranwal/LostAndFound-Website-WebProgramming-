@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: aliceblue;
+      color: dimgray;
+    }
+
+    /* NAV BAR */
+    nav {
+      background: linear-gradient(to right, royalblue, midnightblue);
+      padding: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 18px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    /* SAME HOVER EFFECT */
+    nav ul:hover li a {
+      color: lightgray;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.15);
+      color: deepskyblue;
+    }
+
+    /* PAGE TITLE */
+    .page-title {
+      text-align: center;
+      margin: 60px 0 10px;
+      color: midnightblue;
+    }
+
+    .page-subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: gray;
+    }
+
+    /* CONTACT CONTAINER */
+    .contact-container {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px 60px;
+    }
+
+    /* CONTACT BOX */
+    .contact-box {
+      background-color: white;
+      padding: 35px;
+      border-radius: 8px;
+    }
+
+    .contact-box h2 {
+      color: midnightblue;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    /* INFO */
+    .contact-info p {
+      font-size: 16px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    /* FORM */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      font-family: Arial, sans-serif;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      background-color: royalblue;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: midnightblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="lostinghome.html">Home</a></li>
+      <li><a href="lostitems.html">Lost Items</a></li>
+      <li><a href="found.html">Found Items</a></li>
+      <li><a href="Index.html">AboutUs</a></li>
+ 
+    </ul>
+  </nav>
+
+  <h1 class="page-title">Contact Us</h1>
+  <p class="page-subtitle">Have a question or found an item? Reach out to us.</p>
+
+  <section class="contact-container">
+
+    <!-- CONTACT INFO -->
+    <div class="contact-box contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Email:</strong> lostfound@google.com</p>
+      <p><strong>Phone:</strong> +91 00000 00000</p>
+      <p><strong>Location:</strong> Student Help Desk </p>
+    </div>
+
+    <!-- CONTACT FORM -->
+   <div class="contact-box"> <h2>Send Us a Message</h2>
+ <form onsubmit="showAlert(); return false;">
+
+ <input type="text" placeholder="Your Name" required>
+ <input type="email" placeholder="Your Email" required> 
+<textarea placeholder="Your Message" required></textarea>
+ <button type="submit">Submit</button>
+ </form>
+ </div>
+ </section>
+ <script> function showAlert() { alert("Your message has been submitted successfully. "); }
+ </script> 
+</body>
+ </html>
+
+
+</body>
+</html>

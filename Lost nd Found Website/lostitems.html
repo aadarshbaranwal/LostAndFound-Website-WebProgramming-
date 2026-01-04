@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost Items</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: aliceblue;
+      color: dimgray;
+    }
+
+    /* NAV BAR */
+    nav {
+      background: linear-gradient(to right, royalblue, midnightblue);
+      padding: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 18px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    /* SAME HOVER EFFECT */
+    nav ul:hover li a {
+      color: lightgray;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.15);
+      color: deepskyblue;
+    }
+
+    /* PAGE TITLE */
+    .page-title {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: midnightblue;
+    }
+
+    /* GRID CONTAINER */
+    .lost-container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 30px;
+      padding: 0 20px 60px;
+    }
+
+    /* LOST ITEM CARD */
+    .lost-box {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    .lost-box h2 {
+      color: midnightblue;
+      margin-bottom: 10px;
+    }
+
+    .lost-box p {
+      margin: 6px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="lostinghome.html">Home</a></li>
+      <li><a href="Index.html">AboutUs</a></li>
+      <li><a href="found.html">Found Items</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">Lost Items Reported by Students</h1>
+
+  <!-- LOST ITEMS GRID -->
+  <section class="lost-container">
+
+    <div class="lost-box">
+      <h2>Wallet</h2>
+      <p><strong>Location:</strong> Library</p>
+      <p><strong>Date:</strong> 12 Sept 2025</p>
+      <p><strong>Description:</strong> Black wallet with cash.</p>
+      <p><strong>Reported  by:</strong> Aadarsh Baranwal.</p>
+    </div>
+
+    <div class="lost-box">
+      <h2>Mobile Phone</h2>
+      <p><strong>Location:</strong> Canteen</p>
+      <p><strong>Date:</strong> 11 Sept 2025</p>
+      <p><strong>Description:</strong> Blue phone with transparent cover.</p>
+      <p><strong>Reported  by:</strong> Seema Goswami.</p>
+    </div>
+
+    <div class="lost-box">
+      <h2>College ID Card</h2>
+      <p><strong>Location:</strong> Main Gate</p>
+      <p><strong>Date:</strong> 10 Sept 2025</p>
+      <p><strong>Description:</strong> FY student ID card.</p>
+      <p><strong>Reported  by:</strong> Mouli Anand.</p>
+    </div>
+
+    <div class="lost-box">
+      <h2>Notebook</h2>
+      <p><strong>Location:</strong> Classroom O-202</p>
+      <p><strong>Date:</strong> 10 Sept 2025</p>
+      <p><strong>Description:</strong> Blue classmate notebook with handwritten notes.</p>
+      <p><strong>Reported  by:</strong> Pouras Adak.</p>
+    </div>
+
+    <div class="lost-box">
+      <h2>Earphones</h2>
+      <p><strong>Location:</strong> Quad</p>
+      <p><strong>Date:</strong> 9 Sept 2025</p>
+      <p><strong>Description:</strong> White wired earphones.</p>
+      <p><strong>Reported  by:</strong> Ashwat Dabhade.</p>
+    </div>
+
+    <div class="lost-box">
+      <h2>Water Bottle</h2>
+      <p><strong>Location:</strong> Gym Area</p>
+      <p><strong>Date:</strong> 9 Sept 2025</p>
+      <p><strong>Description:</strong> Steel bottle with black cap.</p>
+      <p><strong>Reported  by:</strong> Neel Kapse.</p>
+    </div>
+
+    <div class="lost-box">
+      <h2>Calculator</h2>
+      <p><strong>Location:</strong> Lab 3</p>
+      <p><strong>Date:</strong> 8 Sept 2025</p>
+      <p><strong>Description:</strong> Scientific calculator.</p>
+      <p><strong>Reported  by:</strong> Dhruviraj Kumar.</p> 
+   </div>
+
+    <div class="lost-box">
+      <h2>Backpack</h2>
+      <p><strong>Location:</strong> Old Canteen</p>
+      <p><strong>Date:</strong> 8 Sept 2025</p>
+      <p><strong>Description:</strong> Black backpack with books.</p>
+      <p><strong>Reported  by:</strong> Harsh kharkar.</p>
+    </div>
+
+    <div class="lost-box">
+      <h2>Keys</h2>
+      <p><strong>Location:</strong> Corridor</p>
+      <p><strong>Date:</strong> 7 Sept 2025</p>
+      <p><strong>Description:</strong> Keychain with 3 keys.</p>
+      <p><strong>Reported  by:</strong> Hridayshu gulati.</p>    
+</div>
+
+    <div class="lost-box">
+      <h2>Wrist Watch</h2>
+      <p><strong>Location:</strong> Auditoriuml</p>
+      <p><strong>Date:</strong> 7 Sept 2025</p>
+      <p><strong>Description:</strong> Black analog watch.</p>
+      <p><strong>Reported  by:</strong> Nishok .</p>    
+</div>
+
+  </section>
+
+</body>
+</html>

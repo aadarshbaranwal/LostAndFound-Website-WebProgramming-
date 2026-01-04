@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Lost Item</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: aliceblue;
+      color: dimgray;
+    }
+
+    /* NAV BAR */
+    nav {
+      background: linear-gradient(to right, royalblue, midnightblue);
+      padding: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 18px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    /* SAME HOVER EFFECT */
+    nav ul:hover li a {
+      color: lightgray;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.15);
+      color: deepskyblue;
+    }
+
+    /* PAGE TITLE */
+    .page-title {
+      text-align: center;
+      margin: 60px 0 10px;
+      color: midnightblue;
+    }
+
+    .page-subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: gray;
+    }
+
+    /* FORM CONTAINER */
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      margin-bottom: 60px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: midnightblue;
+    }
+
+    input, textarea, select {
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      font-family: Arial, sans-serif;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      background-color: royalblue;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: midnightblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="lostinghome.html">Home</a></li>
+      <li><a href="lostitems.html">Lost Items</a></li>
+      <li><a href="found.html">Found Items</a></li>
+      <li><a href="Index.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">Report a Lost Item</h1>
+  <p class="page-subtitle">Fill in the details to report your lost belonging</p>
+
+  <!-- FORM -->
+  <section class="form-container">
+    <form onsubmit="showAlert(); return false;">
+ 
+      <label>Your Name</label>
+      <input type="text" placeholder="enter your name here" required>
+      <label>Class & Div</label>
+      <input type="text" placeholder="FYCS/A" required>
+
+      <label>Item Name</label>
+      <input type="text" placeholder="e.g. Wallet, Mobile Phone" required>
+
+      <label>Category</label>
+      <select required>
+        <option value="">Select Category</option>
+        <option>Electronics</option>
+        <option>Documents</option>
+        <option>Accessories</option>
+        <option>Books</option>
+        <option>Others</option>
+      </select>
+
+      <label>Last Seen Location</label>
+      <input type="text" placeholder="e.g. Library, Canteen" required>
+
+      <label>Date Lost</label>
+      <input type="date" required>
+
+      <label>Description</label>
+      <textarea placeholder="Describe the item briefly" required></textarea>
+
+      <button type="submit">Submit Report</button>
+
+    </form>
+  </section>
+
+  <script>
+    function showAlert() {
+      alert("Your lost item has been reported successfully. We will notify you if it is found.");
+    }
+  </script>
+
+</body>
+</html>

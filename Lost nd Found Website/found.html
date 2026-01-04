@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Found Items</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: aliceblue;
+      color: dimgray;
+    }
+
+    /* NAV BAR */
+    nav {
+      background: linear-gradient(to right, royalblue, midnightblue);
+      padding: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 18px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    /* SAME HOVER EFFECT */
+    nav ul:hover li a {
+      color: lightgray;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.15);
+      color: deepskyblue;
+    }
+
+    /* PAGE TITLE */
+    .page-title {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: midnightblue;
+    }
+
+    /* GRID */
+    .found-container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 0 20px 60px;
+    }
+
+    /* CARD */
+    .found-box {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    .found-box h2 {
+      color: midnightblue;
+      margin-bottom: 10px;
+    }
+
+    .found-box p {
+      margin: 6px 0;
+    }
+
+    .status {
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="lostinghome.html">Home</a></li>
+      <li><a href="lostitems.html">Lost Items</a></li>
+      <li><a href="Index.html">AboutUs</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">Recovered Lost Items</h1>
+
+  <!-- FOUND ITEMS -->
+  <section class="found-container">
+
+    <div class="found-box">
+      <h2>Wallet</h2>
+      <p><strong>Lost At:</strong> Library</p>
+      <p><strong>Found At:</strong> Reading Area</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Mobile Phone</h2>
+      <p><strong>Lost At:</strong> Canteen</p>
+      <p><strong>Found At:</strong> Security Desk</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>College ID Card</h2>
+      <p><strong>Lost At:</strong> Main Gate</p>
+      <p><strong>Found At:</strong> Admin Office</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Notebook</h2>
+      <p><strong>Lost At:</strong> Classroom A-204</p>
+      <p><strong>Found At:</strong> Faculty Room</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Earphones</h2>
+      <p><strong>Lost At:</strong> Bus Stop</p>
+      <p><strong>Found At:</strong> Lost & Found Desk</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Water Bottle</h2>
+      <p><strong>Lost At:</strong> Gym Area</p>
+      <p><strong>Found At:</strong> Sports Room</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Calculator</h2>
+      <p><strong>Lost At:</strong> Lab 3</p>
+      <p><strong>Found At:</strong> Lab Incharge Desk</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Backpack</h2>
+      <p><strong>Lost At:</strong> Parking Area</p>
+      <p><strong>Found At:</strong> Security Cabin</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Keys</h2>
+      <p><strong>Lost At:</strong> Corridor</p>
+      <p><strong>Found At:</strong> Reception</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Wrist Watch</h2>
+      <p><strong>Lost At:</strong> Seminar Hall</p>
+      <p><strong>Found At:</strong> Event Office</p>
+      <p class="status">Status: Recovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Pen Drive</h2>
+      <p><strong>Lost At:</strong> Computer Lab</p>
+      <p><strong>Found At:</strong> IT Office</p>
+      <p style="color : Red; font-weight : bold">Status: Unrecovered</p>
+    </div>
+
+    <div class="found-box">
+      <h2>Helmet</h2>
+      <p><strong>Lost At:</strong> Parking Area</p>
+      <p><strong>Found At:</strong> Security Gate</p>
+      <p style="color : Red; font-weight : bold">Status: Unrecovered</p>
+    </div>
+
+  </section>
+
+</body>
+</html>
